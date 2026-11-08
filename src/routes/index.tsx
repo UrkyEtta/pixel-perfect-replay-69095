@@ -38,7 +38,7 @@ function Index() {
   const [cat, setCat] = useState<CategoryId | "todas">("todas");
 
   const lines = useMemo(
-    () => PRODUCTS.filter((p) => cart[p.id]).map((p) => ({ product: p, qty: cart[p.id] })),
+    () => PRODUCTS.filter((p) => cart[p.id]).map((p) => ({ product: p, qty: cart[p.id] ?? 0 })),
     [cart],
   );
   const count = lines.reduce((s, l) => s + l.qty, 0);
