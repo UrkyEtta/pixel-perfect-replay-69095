@@ -45,7 +45,7 @@ export function Sello({ className = "" }: { className?: string }) {
       <circle cx="60" cy="60" r="30" fill="var(--andino)" stroke="var(--cacao)" strokeWidth="3" />
       <path d="M42 70h36v-6h-8v-6h-8v-6h-4v6h-8v6h-8z" fill="var(--maiz)" />
       <text fontFamily="Lilita One" fontSize="15" fill="var(--cacao)" letterSpacing="2">
-        <textPath href="#sc">COCINA BOLIVIANA • COCINA BOLIVIANA •</textPath>
+        <textPath href="#sc" textLength="258" lengthAdjust="spacingAndGlyphs">COCINA BOLIVIANA • SABOR ANDINO •</textPath>
       </text>
     </svg>
   );
