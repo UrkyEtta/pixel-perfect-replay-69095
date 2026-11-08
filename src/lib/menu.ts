@@ -2,6 +2,17 @@ import hero from "@/assets/hero.jpg";
 import saltena from "@/assets/saltena.jpg";
 import sopa from "@/assets/sopa.jpg";
 import bebida from "@/assets/bebida.jpg";
+import img_silpancho from "@/assets/silpancho.jpg";
+import img_charquekan from "@/assets/charquekan.jpg";
+import img_majadito from "@/assets/majadito.jpg";
+import img_fricase from "@/assets/fricase.jpg";
+import img_chairo from "@/assets/chairo.jpg";
+import img_cunape from "@/assets/cunape.jpg";
+import img_somo from "@/assets/somo.jpg";
+import img_limonada from "@/assets/limonada.jpg";
+import img_menu_raices from "@/assets/menu-raices.jpg";
+import img_duo_saltenero from "@/assets/duo-saltenero.jpg";
+import img_saltena_pollo from "@/assets/saltena-pollo.jpg";
 
 /** Número de WhatsApp en formato internacional sin "+" (ej: "56912345678"). Vacío = sin configurar. */
 export const WHATSAPP_NUMBER = "";
@@ -27,20 +38,20 @@ export type Product = {
 
 export const PRODUCTS: Product[] = [
   { id: "pique-macho", name: "Pique Macho", description: "Carne, salchicha, papas fritas, huevo y vegetales.", price: 12990, category: "especialidades", image: hero },
-  { id: "silpancho", name: "Silpancho", description: "Carne apanada, arroz, papas, huevo y ensalada.", price: 9990, category: "especialidades", image: hero },
-  { id: "charquekan", name: "Charquekan", description: "Charque, mote, papa, huevo y queso.", price: 11990, category: "especialidades", image: hero },
-  { id: "majadito", name: "Majadito", description: "Arroz con carne, huevo y plátano.", price: 9490, category: "especialidades", image: hero },
-  { id: "fricase", name: "Fricasé", description: "Cerdo con ají amarillo, mote y chuño.", price: 10990, category: "especialidades", image: sopa },
+  { id: "silpancho", name: "Silpancho", description: "Carne apanada, arroz, papas, huevo y ensalada.", price: 9990, category: "especialidades", image: img_silpancho },
+  { id: "charquekan", name: "Charquekan", description: "Charque, mote, papa, huevo y queso.", price: 11990, category: "especialidades", image: img_charquekan },
+  { id: "majadito", name: "Majadito", description: "Arroz con carne, huevo y plátano.", price: 9490, category: "especialidades", image: img_majadito },
+  { id: "fricase", name: "Fricasé", description: "Cerdo con ají amarillo, mote y chuño.", price: 10990, category: "especialidades", image: img_fricase },
   { id: "sopa-mani", name: "Sopa de Maní", description: "Cremosa sopa de maní con papas fritas y perejil.", price: 6990, category: "sopas", image: sopa },
-  { id: "chairo", name: "Chairo", description: "Sopa paceña de chuño, carne y verduras.", price: 6490, category: "sopas", image: sopa },
+  { id: "chairo", name: "Chairo", description: "Sopa paceña de chuño, carne y verduras.", price: 6490, category: "sopas", image: img_chairo },
   { id: "saltena-carne", name: "Salteña de carne", description: "Masa dorada rellena de jugoso guiso de carne.", price: 2990, category: "entradas", image: saltena },
-  { id: "saltena-pollo", name: "Salteña de pollo", description: "Masa dorada rellena de guiso de pollo.", price: 2990, category: "entradas", image: saltena },
-  { id: "cunape", name: "Cuñapé", description: "Panecillo de almidón de yuca y queso.", price: 2490, category: "entradas", image: saltena },
+  { id: "saltena-pollo", name: "Salteña de pollo", description: "Masa dorada rellena de guiso de pollo.", price: 2990, category: "entradas", image: img_saltena_pollo },
+  { id: "cunape", name: "Cuñapé", description: "Panecillo de almidón de yuca y queso.", price: 2490, category: "entradas", image: img_cunape },
   { id: "mocochinchi", name: "Mocochinchi", description: "Refresco de durazno deshidratado y canela.", price: 2990, category: "bebidas", image: bebida },
-  { id: "somo", name: "Somó", description: "Bebida tradicional de maíz.", price: 2990, category: "bebidas", image: bebida },
-  { id: "limonada", name: "Limonada", description: "Limonada natural.", price: 2490, category: "bebidas", image: bebida },
-  { id: "menu-raices", name: "Menú Raíces", description: "Sopa de maní, silpancho y bebida.", price: 13990, category: "promociones", image: sopa },
-  { id: "duo-saltenero", name: "Dúo Salteñero", description: "Dos salteñas y bebida.", price: 6990, category: "promociones", image: saltena },
+  { id: "somo", name: "Somó", description: "Bebida tradicional de maíz.", price: 2990, category: "bebidas", image: img_somo },
+  { id: "limonada", name: "Limonada", description: "Limonada natural.", price: 2490, category: "bebidas", image: img_limonada },
+  { id: "menu-raices", name: "Menú Raíces", description: "Sopa de maní, silpancho y bebida.", price: 13990, category: "promociones", image: img_menu_raices },
+  { id: "duo-saltenero", name: "Dúo Salteñero", description: "Dos salteñas y bebida.", price: 6990, category: "promociones", image: img_duo_saltenero },
 ];
 
 export const formatCLP = (n: number) =>
