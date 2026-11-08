@@ -113,7 +113,7 @@ function Index() {
               <div className="mb-4 flex items-center gap-3">
                 <Isotipo size={30} />
                 <h3 className="text-2xl text-cacao">{c.label}</h3>
-                <div className="terrace-band terrace-band-arcilla h-3 flex-1 opacity-60" style={{ backgroundColor: "var(--arcilla)" }} />
+                <div className="terrace-band h-3 flex-1 opacity-60" style={{ backgroundColor: "var(--arcilla)" }} />
               </div>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {items.map((p) => (
